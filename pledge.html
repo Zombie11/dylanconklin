@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title>< Dylan Conklin /></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+      	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/prettyify.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll">
+
+<!-- header container
+     ================================================== -->
+<header class="container">
+	<h1>I've signed the Code of Conduct for Designers. You should too. Unless you are a doucehbag.<br /><br />
+	
+	<a href="http://designproacademy.org/code-of-professional-conduct.htm">do it here</a></h1>
+</header>
+
+<!-- end header container -->
+
+<!-- Le javascript
+    ================================================== -->
+	<script src="js/bootstrap.js"></script>
+	<script src="js/prettyify.js"></script>
+	<script src="js/scrollspy.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/application.js"></script>
+	
+	<script src="js/libs/jquery-1.6.2.min.js"></script>
+	<script src="js/jquery.viewport.js"></script>
+	<script>
+
+$(window).scroll(function () {
+  var inview = '#' + $("#main section:in-viewport:first h1").parent().attr('id'),
+      $link = $('nav a').filter('[hash=' + inview + ']');
+
+  if ($link.length && !$link.is('.selected')) {
+    $('nav a').removeClass('selected');
+    $link.addClass('selected');
+  }
+});
+
+</script>
+	<script src="js/libs/jquery.actions.js"></script>
+    
+<!-- Analytics
+    ================================================== -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+ 			 _gaq.push(['_setAccount', 'UA-32224514-1']);
+ 			 _gaq.push(['_trackPageview']);
+
+  			(function() {
+   			 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   			 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    		 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  			})();
+
+		</script>
+
+
+</body>
+</html>
